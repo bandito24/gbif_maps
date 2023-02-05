@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leaflet Taxon Key Input</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+    <h1>Leaflet Taxon Key Input</h1>
+    <div id="name-flex">
+        <input class="name" type="text" id="name-input" placeholder="input-name"/>
+        <input class="name"type="submit" id="name-submit" />
+        <h4 class="name" id="show-id"></h4>
+    </div>
+    <div id="id-flex">
+        <input class="id" type="text" id="taxon-key-input" placeholder="Enter taxon key here">
+        <button class="id" id="submit-button">Submit</button>
+        <h4 class="id" id="show-name"></h4>
+    </div>
+    <div id="map-type-select">
+        <select name="map-select" id="map-select">
+            <option selected>Classic Poly</option>
+            <option value="green.poly">Green Poly</option>
+            <option value="blue.marker">Blue Marker</option>
+            <option value="classic.point">Classic Point</option>
+            <option value="fire.point">Fire Point</option>
+            <option value="purpleYellow.point">Purple Yellow Point</option>
+            <option value="greenHeat.point">Green Heat Point</option>
+            <option value="purpleHeat.point">Purple Heat Point</option>
+            <option value="blueHeat.point">Blue Heat Point</option>
+            <option value="glacier.point">Glacier Point</option>
+        </select>
+    </div>
+    <div id="map" style="width: 100%; height: 350px;"></div>
+
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
