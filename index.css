@@ -1,0 +1,17 @@
+
+#name-flex{
+    display: flex;
+}
+
+.name, .id{
+    align-self: center;
+    
+}
+
+#id-flex{
+    display: flex;
+}
+
+#show-id, #show-name{
+    margin-left: 80px;
+}
